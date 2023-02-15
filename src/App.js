@@ -8,7 +8,6 @@ import PaginatedList from "./components/PaginatedList";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const data = employees;
-  console.log(data);
 
   function handleSearchTerm(event) {
     setSearchTerm(event.target.value);

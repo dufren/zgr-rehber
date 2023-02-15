@@ -4,9 +4,9 @@ import EmployeeCard from "./EmployeeCard";
 function EmployeeCardList({ data }) {
   let content =
     data &&
-    data.map((employee) => (
+    data.map((employee, idx) => (
       <EmployeeCard
-        key={employee.id}
+        key={idx}
         name={employee.name}
         surname={employee.username}
         phone={employee.phone}
